@@ -1,0 +1,29 @@
+@mixin atSmall(){
+	@media screen and (max-width: $SMALL){
+		@content;
+	}
+}
+
+@mixin atMedium(){
+	@media screen and (max-width: $MEDIUM){
+		@content;
+	}
+}
+
+@mixin atLarge(){
+	@media screen and (min-width: $MEDIUM){
+		@content;
+	}
+}
+
+@mixin smallAndUp(){
+	@media screen and (min-width: $SMALL){
+		@content;
+	}
+}
+
+@mixin atCustom($bp){
+	@media screen and ($bp){
+		@content;
+	}
+}

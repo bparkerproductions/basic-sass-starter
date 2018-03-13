@@ -1,0 +1,32 @@
+//typo scale
+
+	body{
+		font-size: $BASE-FONT_SIZE;
+	}
+
+	h1{ font-size:3.47em; }
+	h2{ font-size:2.6em; }
+	h3{ font-size:1.95em; }
+	h4{ font-size: 1.466em; }
+	h5{ font-size: 1.1em; }
+	h6{ font-size: 0.825em; }
+
+	@include atSmall{
+		h1{ font-size:1.982em; }
+		h2{ font-size:1.762em; }
+		h3{ font-size:1.566em; }
+		h4{ font-size: 1.392em; }
+		h5{ font-size: 1.238em; }
+		h6{ font-size: 1.1em; }	
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		font-weight: bold;
+		color: $text-color;
+		margin: 0 0 10px 0;
+	}
+
+	p{
+		color: $text-color;
+		line-height:1.3;
+	}

@@ -1,0 +1,19 @@
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+	a{ 
+		text-decoration: none;
+		color: $link-color;
+	}
+
+	ul{
+		margin:0px;
+		padding:0px;
+	}
+
+	button{
+		background-color: $grey;
+		padding:20px;
+		border:0px;
+	}
+}

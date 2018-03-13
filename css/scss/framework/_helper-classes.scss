@@ -1,0 +1,41 @@
+//helper classes
+.horizontal-list{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+
+	li{
+		margin: 0px 12px;
+	}
+}
+
+//positioning classes
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+//container
+.inner-container{
+	max-width: $CONTAINER;
+
+	@media screen and (max-width: $SMALL){
+		max-width: $CONTAINER-SMALL;
+		padding: 0px 15px;
+	}
+}
+
+
+//responsive text
+.text-container{
+	max-width: $TEXT;
+
+	@media screen and (max-width:$MEDIUM){
+		max-width: $TEXT-MED;
+	}
+
+	@media screen and (max-width: $SMALL){
+		max-width:$TEXT-SMALL;
+	}
+}

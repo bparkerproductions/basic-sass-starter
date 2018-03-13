@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+  body a {
+    text-decoration: none;
+    color: #5BC0DE; }
+  body ul {
+    margin: 0px;
+    padding: 0px; }
+  body button {
+    background-color: #EDEDED;
+    padding: 20px;
+    border: 0px; }
+
+.horizontal-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+  .horizontal-list li {
+    margin: 0px 12px; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.inner-container {
+  max-width: 85%; }
+  @media screen and (max-width: 600px) {
+    .inner-container {
+      max-width: 100%;
+      padding: 0px 15px; } }
+
+.text-container {
+  max-width: 55%; }
+  @media screen and (max-width: 1024px) {
+    .text-container {
+      max-width: 80%; } }
+  @media screen and (max-width: 600px) {
+    .text-container {
+      max-width: 95%; } }
+
+body {
+  font-size: 18px; }
+
+h1 {
+  font-size: 3.47em; }
+
+h2 {
+  font-size: 2.6em; }
+
+h3 {
+  font-size: 1.95em; }
+
+h4 {
+  font-size: 1.466em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 0.825em; }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.982em; }
+  h2 {
+    font-size: 1.762em; }
+  h3 {
+    font-size: 1.566em; }
+  h4 {
+    font-size: 1.392em; }
+  h5 {
+    font-size: 1.238em; }
+  h6 {
+    font-size: 1.1em; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px 0; }
+
+p {
+  color: #333;
+  line-height: 1.3; }

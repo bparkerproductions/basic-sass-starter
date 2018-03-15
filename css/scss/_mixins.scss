@@ -1,3 +1,9 @@
+@mixin atTiny(){
+	@media screen and (max-width: $TINY){
+		@content;
+	}
+}
+
 @mixin atSmall(){
 	@media screen and (max-width: $SMALL){
 		@content;

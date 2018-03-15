@@ -6,6 +6,11 @@ body{
 		color: $link-color;
 	}
 
+	img{
+		max-height: 100%;
+		width: auto;
+	}
+
 	ul{
 		margin:0px;
 		padding:0px;

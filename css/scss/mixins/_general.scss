@@ -1,0 +1,8 @@
+//define background image
+@mixin bg-image($size, $url){
+	background-image: 
+	url($url);
+	background-repeat: no-repeat;
+	background-size:$size auto;
+	background-position: center;
+}

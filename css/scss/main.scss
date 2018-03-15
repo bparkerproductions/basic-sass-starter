@@ -1,6 +1,9 @@
 @import 'framework/variables';
 @import 'global';
-@import 'mixins';
+
+//mixins
+@import 'mixins/media';
+@import 'mixins/general';
 
 @import 'framework/helper-classes';
 @import 'framework/typography';

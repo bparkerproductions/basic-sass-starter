@@ -35,33 +35,6 @@ header{
 	}
 }
 
-//the bottom links
-#site-navigation .footer{
-	display: none; //hide by default
-
-	@include atSmall{
-		display: flex;
-		position: fixed;
-		bottom:0;
-		width:100%;
-
-		ul{
-			flex-direction: row !important;
-			justify-content: center;
-			margin-top:10px;
-			padding-bottom:18px;
-
-			li{ 
-				font-size: 1em; 
-				width:27px;
-				height: 27px;
-				
-				svg{ font-size: 14px;}
-			}
-		}
-
-	}
-}
 
 //the mobile list shown on mobile
 .mobile-list-style{

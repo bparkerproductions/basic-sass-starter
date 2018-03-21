@@ -6,3 +6,17 @@
 	background-size:$size auto;
 	background-position: center;
 }
+
+@mixin image-overlay(){
+    img{
+      opacity: 1;
+	  display: block;
+	  height: auto;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+
+	  &:hover{
+	  	opacity: 0.8;
+	  }
+    }
+}

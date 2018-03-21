@@ -1,0 +1,29 @@
+header{
+	background-color: $black;
+	padding: 20px 0;
+}
+
+#site-navigation {
+
+		ul{
+			display:flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-right:35px;
+			transition: height 2s;
+			list-style: none;
+		}
+
+		@include atSmall{ display: none;}
+
+		@include atSmallAndUp{ display: flex !important; }
+			li{
+				text-transform: uppercase;
+
+				a{
+					color: $white;
+					margin:0 10px;
+					font-size:0.65em;
+				}
+			}
+	}

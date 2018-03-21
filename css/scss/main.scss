@@ -5,8 +5,12 @@
 @import 'mixins/media';
 @import 'mixins/general';
 
+//parts
+@import 'parts/navbar';
+
 @import 'framework/helper-classes';
 @import 'framework/typography';
+@import 'framework/responsive-nav';
 
 
 

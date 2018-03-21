@@ -29,7 +29,7 @@
 }
 
 @mixin atMediumAndUp(){
-	@media screen and (min-width: $SMALL){
+	@media screen and (min-width: $MEDIUM){
 		@content;
 	}
 }

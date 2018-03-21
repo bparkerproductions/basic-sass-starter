@@ -1,0 +1,92 @@
+//navbar classes
+.show{ display: flex !important;}
+.hide{ display: none !important; }
+
+//main header
+header{
+	display: flex;
+	justify-content: flex-end;
+}
+
+//the toggle button
+.toggle-container{
+	margin-right:25px;
+	display: none;
+
+	i,svg{
+		color: $white;
+		font-size:1.1em;
+	}
+
+	.open-icon img{
+		max-width:33px;
+		min-width: 33px;
+	}
+
+	.close-icon img{
+		max-width:20px;
+		min-width:20px;
+	}
+
+	@include atSmall{
+		display:block;
+		display: flex;
+		align-items: center;
+	}
+}
+
+//the bottom links
+#site-navigation .footer{
+	display: none; //hide by default
+
+	@include atSmall{
+		display: flex;
+		position: fixed;
+		bottom:0;
+		width:100%;
+
+		ul{
+			flex-direction: row !important;
+			justify-content: center;
+			margin-top:10px;
+			padding-bottom:18px;
+
+			li{ 
+				font-size: 1em; 
+				width:27px;
+				height: 27px;
+				
+				svg{ font-size: 14px;}
+			}
+		}
+
+	}
+}
+
+//the mobile list shown on mobile
+.mobile-list-style{
+
+	@include atSmall{
+		position: fixed;
+		top:150px;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+
+		display: flex !important;
+		align-items: flex-start !important;
+		justify-content: center !important;
+
+		ul{
+			display: flex;
+			flex-direction: column;
+			margin-top:40px;
+
+			li{
+				margin:5px 0;
+				font-size:1.3em;
+				text-align: center;
+			}
+		}
+	}
+}

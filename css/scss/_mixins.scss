@@ -22,26 +22,14 @@
 	}
 }
 
-@mixin atSmallAndUp(){
+@mixin smallAndUp(){
 	@media screen and (min-width: $SMALL){
 		@content;
 	}
 }
 
-@mixin atMediumAndUp(){
-	@media screen and (min-width: $SMALL){
-		@content;
-	}
-}
-
-@mixin atCustomAndUp($bp){
-	@media screen and (min-width: $bp){
-		@content;
-	}
-}
-
-@mixin atCustomAndLower($bp){
-	@media screen and (max-width: $bp){
+@mixin atCustom($bp){
+	@media screen and ($bp){
 		@content;
 	}
 }

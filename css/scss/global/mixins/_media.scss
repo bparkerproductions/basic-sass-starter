@@ -1,59 +1,59 @@
-@mixin atTiny(){
-	@media screen and (max-width: $TINY){
+@mixin atTiny() {
+	@media screen and (max-width: $TINY) {
 		@content;
 	}
 }
 
-@mixin atTinyAndUp(){
-	@media screen and (min-width: $TINY){
+@mixin atTinyAndUp() {
+	@media screen and (min-width: $TINY) {
 		@content;
 	}
 }
 
-@mixin atSmall(){
-	@media screen and (max-width: $SMALL){
+@mixin atSmall() {
+	@media screen and (max-width: $SMALL) {
 		@content;
 	}
 }
 
-@mixin atSmallAndUp(){
-	@media screen and (min-width: $SMALL){
+@mixin atSmallAndUp() {
+	@media screen and (min-width: $SMALL) {
 		@content;
 	}
 }
 
-@mixin atMedium(){
-	@media screen and (max-width: $MEDIUM){
+@mixin atMedium() {
+	@media screen and (max-width: $MEDIUM) {
 		@content;
 	}
 }
 
-@mixin atLarge(){
-	@media screen and (min-width: $MEDIUM){
+@mixin atLarge() {
+	@media screen and (min-width: $MEDIUM) {
 		@content;
 	}
 }
 
-@mixin atTabletAndUp(){
-	@media screen and (min-width: $TABLET){
+@mixin atTabletAndUp() {
+	@media screen and (min-width: $TABLET) {
 		@content;
 	}
 }
 
-@mixin atTablet(){
-	@media screen and (max-width: $TABLET){
+@mixin atTablet() {
+	@media screen and (max-width: $TABLET) {
 		@content;
 	}
 }
 
-@mixin atCustomAndUp($bp){
-	@media screen and (min-width: $bp){
+@mixin atCustomAndUp($bp) {
+	@media screen and (min-width: $bp) {
 		@content;
 	}
 }
 
-@mixin atCustomAndLower($bp){
-	@media screen and (max-width: $bp){
+@mixin atCustomAndLower($bp) {
+	@media screen and (max-width: $bp) {
 		@content;
 	}
 }

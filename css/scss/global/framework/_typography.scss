@@ -1,37 +1,37 @@
 //typo scale
 
-	body{
+	body {
 		font-size: $BASE-FONT_SIZE;
 	}
 
-	h1{ font-size:$FONT_SCALE*3.47em; }
-	h2{ font-size:$FONT_SCALE*2.6em; }
-	h3{ font-size:$FONT_SCALE*1.95em; }
-	h4{ font-size: $FONT_SCALE*1.466em; }
-	h5{ font-size: $FONT_SCALE*1.1em; }
-	h6{ font-size: $FONT_SCALE*0.825em; }
+	h1 { font-size: $FONT_SCALE*3.47em; }
+	h2 { font-size: $FONT_SCALE*2.6em; }
+	h3 { font-size: $FONT_SCALE*1.95em; }
+	h4 { font-size: $FONT_SCALE*1.466em; }
+	h5 { font-size: $FONT_SCALE*1.1em; }
+	h6 { font-size: $FONT_SCALE*0.825em; }
 
-	@include atSmall{
-		h1{ font-size:$SMALL_FONT_SCALE*1.982em; }
-		h2{ font-size:$SMALL_FONT_SCALE*1.762em; }
-		h3{ font-size:$SMALL_FONT_SCALE*1.566em; }
-		h4{ font-size:$SMALL_FONT_SCALE*1.392em; }
-		h5{ font-size:$SMALL_FONT_SCALE*1.238em; }
-		h6{ font-size:$SMALL_FONT_SCALE*1.1em; }	
+	@include atSmall {
+		h1 { font-size: $SMALL_FONT_SCALE*1.982em; }
+		h2 { font-size: $SMALL_FONT_SCALE*1.762em; }
+		h3 { font-size: $SMALL_FONT_SCALE*1.566em; }
+		h4 { font-size: $SMALL_FONT_SCALE*1.392em; }
+		h5 { font-size: $SMALL_FONT_SCALE*1.238em; }
+		h6 { font-size: $SMALL_FONT_SCALE*1.1em; }	
 	}
 
-	h1,h2,h3,h4,h5,h6{
+	@include allHeaders {
 		font-weight: bold;
 		color: $text-color;
 		margin: 0 0 10px 0;
 	}
 
-	p{
+	p {
 		color: $text-color;
-		line-height:1.3;
+		line-height: 1.3;
 		font-size: $PARA_FONT_SIZE;
 
-		@include atSmall{
+		@include atSmall {
 			font-size: $SMALL_PARA_FONT_SIZE;
 		}
 	}

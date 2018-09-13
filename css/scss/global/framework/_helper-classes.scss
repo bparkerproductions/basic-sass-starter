@@ -20,7 +20,7 @@
 .inner-container{
 	max-width: $CONTAINER;
 
-	@media screen and (max-width: $SMALL){
+	@include atSmall{
 		max-width: $CONTAINER-SMALL;
 		padding: 0px 15px;
 	}
@@ -31,11 +31,11 @@
 .text-container{
 	max-width: $TEXT;
 
-	@media screen and (max-width:$MEDIUM){
+	@include atMedium{
 		max-width: $TEXT-MED;
 	}
 
-	@media screen and (max-width: $SMALL){
+	@include atSmall{
 		max-width:$TEXT-SMALL;
 	}
 }

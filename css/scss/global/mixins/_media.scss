@@ -4,8 +4,20 @@
 	}
 }
 
+@mixin atTinyAndUp(){
+	@media screen and (min-width: $TINY){
+		@content;
+	}
+}
+
 @mixin atSmall(){
 	@media screen and (max-width: $SMALL){
+		@content;
+	}
+}
+
+@mixin atSmallAndUp(){
+	@media screen and (min-width: $SMALL){
 		@content;
 	}
 }
@@ -22,14 +34,14 @@
 	}
 }
 
-@mixin atSmallAndUp(){
-	@media screen and (min-width: $SMALL){
+@mixin atTabletAndUp(){
+	@media screen and (min-width: $TABLET){
 		@content;
 	}
 }
 
-@mixin atMediumAndUp(){
-	@media screen and (min-width: $MEDIUM){
+@mixin atTablet(){
+	@media screen and (max-width: $TABLET){
 		@content;
 	}
 }

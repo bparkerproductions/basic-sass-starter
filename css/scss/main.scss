@@ -1,17 +1,8 @@
-@import 'framework/variables';
-@import 'global';
+/*
+ * Import global styles and mixins
+ */
 
-//mixins
-@import 'mixins/media';
-@import 'mixins/general';
-
-//parts
-@import 'parts/navbar';
-
-@import 'framework/helper-classes';
-@import 'framework/typography';
-@import 'framework/responsive-nav';
-
-
-
-
+@import 'global/mixins/media';
+@import 'global/framework/variables';
+@import 'global/framework/helper-classes';
+@import 'global/framework/typography';

@@ -1,26 +1,32 @@
 //helper classes
-.horizontal-list{
+.horizontal-list {
 	list-style: none;
 	display: flex;
 	justify-content: center;
 
-	li{
+	li {
 		margin: 0px 12px;
 	}
 }
 
 //positioning classes
-.center{
+.center {
 	display: flex;
 	flex-direction: column;
-	align-items:center;
+	align-items: center;
+}
+
+.hard-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 //container
-.inner-container{
+.inner-container {
 	max-width: $CONTAINER;
 
-	@include atSmall{
+	@include atSmall {
 		max-width: $CONTAINER-SMALL;
 		padding: 0px 15px;
 	}
@@ -28,14 +34,14 @@
 
 
 //responsive text
-.text-container{
+.text-container {
 	max-width: $TEXT;
 
-	@include atMedium{
+	@include atMedium {
 		max-width: $TEXT-MED;
 	}
 
-	@include atSmall{
+	@include atSmall {
 		max-width:$TEXT-SMALL;
 	}
 }

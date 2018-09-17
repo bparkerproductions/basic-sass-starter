@@ -6,8 +6,13 @@ var browserSync = require('browser-sync').create();
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var fileinclude = require('gulp-file-include');
 
-//set CSS prefixes
+/*
+ * CSS workflow & chain
+ */
+
+//prefixes
 gulp.task('prefix', function(){
   gulp.src('css/main.css')
   .pipe(autoprefexer({
@@ -24,12 +29,7 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-//reload
-gulp.task('reload', function(){
-  browserSync.reload();
-});
-
-//main css workflow
+//the sequence
 gulp.task('css', function(done){
   //define order tasks should run in
   runSequence('sass', 'prefix', 
@@ -38,7 +38,38 @@ gulp.task('css', function(done){
     function(){ done(); });
 });
 
-//JS bundling
+
+/*
+ * Reload & file include
+ */
+//reload
+gulp.task('reload', function(){
+  browserSync.reload();
+});
+
+//HTML file includes
+gulp.task('file-include', function(){
+  gulp.src('app/**')
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file'
+  }))
+  .on("error", function (err) { console.log("Error : " + err.message); })
+  .pipe(gulp.dest('build/app'))
+});
+
+gulp.task('app-load', function(done){
+  runSequence('reload', 'file-include',
+
+    //end
+    function(){ done(); })
+});
+
+
+
+/*
+ * JS & bundling
+ */
 gulp.task('bundle', function(){
   var bundler = browserify('js/main.js')
   .bundle()
@@ -48,17 +79,19 @@ gulp.task('bundle', function(){
   .pipe(gulp.dest('build'))
 });
 
-//watch prefixes
+/*
+ * Watch prefixes
+ */
 gulp.task('watch',function(){
-
   browserSync.init({
     notify: false,
     injectChanges: true,
+    open: false,
     server: {
       baseDir: "./"
     }
   });
   gulp.watch('css/scss/**', ['css']);
-  gulp.watch('index.html', ['reload']);
+  gulp.watch('app/**', ['app-load']);
   gulp.watch('js/**', ['bundle']);
 });

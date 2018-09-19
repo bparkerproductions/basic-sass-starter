@@ -4,7 +4,7 @@
 
 @mixin allText() {
   h1, h2, h3, h4, h5, h6, span,
-  li, a, ul, ol, p {
+  li, a, ul, ol, p, i, b {
     @content;
   }
 }

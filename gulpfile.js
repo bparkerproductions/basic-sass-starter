@@ -7,6 +7,7 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var fileinclude = require('gulp-file-include');
+const babel = require('gulp-babel');
 
 /*
  * CSS workflow & chain
@@ -14,11 +15,11 @@ var fileinclude = require('gulp-file-include');
 
 //prefixes
 gulp.task('prefix', function(){
-  gulp.src('css/main.css')
-  .pipe(autoprefexer({
-    browsers: ['last 2 versions']
-  }))
-  .pipe(gulp.dest('build'))
+	gulp.src('css/main.css')
+	.pipe(autoprefexer({
+		browsers: ['last 2 versions']
+	}))
+	.pipe(gulp.dest('build'))
 });
 
 //compile scss
@@ -44,7 +45,7 @@ gulp.task('css', function(done){
  */
 //reload
 gulp.task('reload', function(){
-  browserSync.reload();
+	browserSync.reload();
 });
 
 //HTML file includes
@@ -76,22 +77,33 @@ gulp.task('bundle', function(){
   .on("error", function (err) { console.log("Error : " + err.message); })
   .pipe(source('main.js'))
   .pipe(buffer())
+  .pipe(babel({
+      presets: ['@babel/env']
+   }))
   .pipe(gulp.dest('build'))
+});
+
+gulp.task('js-bundle', function(done){
+  runSequence('reload', 'bundle',
+
+    //end
+    function(){ done(); })
 });
 
 /*
  * Watch prefixes
  */
 gulp.task('watch',function(){
-  browserSync.init({
-    notify: false,
+	browserSync.init({
+		notify: false,
     injectChanges: true,
     open: false,
-    server: {
-      baseDir: "./"
-    }
-  });
-  gulp.watch('css/scss/**', ['css']);
-  gulp.watch('app/**', ['app-load']);
-  gulp.watch('js/**', ['bundle']);
+		server: {
+			baseDir: "./"
+		}
+	});
+	gulp.watch('css/scss/**', ['css']);
+	gulp.watch('app/**', ['app-load']);
+  gulp.watch('js/**', ['js-bundle']);
 });
+

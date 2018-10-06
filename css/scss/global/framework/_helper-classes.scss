@@ -31,17 +31,3 @@
 		padding: 0px 15px;
 	}
 }
-
-
-//responsive text
-.text-container {
-	max-width: $TEXT;
-
-	@include atMedium {
-		max-width: $TEXT-MED;
-	}
-
-	@include atSmall {
-		max-width: $TEXT-SMALL;
-	}
-}

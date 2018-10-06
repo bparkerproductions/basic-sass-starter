@@ -20,9 +20,15 @@
   input[type="password"],
   input[type="email"],
   input[type="tel"],
-  select.select,
-  textarea,
-  .textarea {
+  select,
+  textarea {
+    @content;
+  }
+}
+
+//Browser specific queries
+@mixin ifIE() {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
 }

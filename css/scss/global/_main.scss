@@ -9,6 +9,35 @@ html,body {
   overflow-x: hidden; 
 }
 
+i {
+  font-family: 'Font Awesome\ 5 Pro', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+@include allText {
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@include allInputs {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@include allHeaders {
+  color: $header-color;
+}
+
+//default line-height
+@include allText {
+  line-height: $LINE-HEIGHT;
+
+  @include atSmall {
+    line-height: $MOBILE-LINE-HEIGHT;
+  }
+}
+
 //container
 .inner-container {
 	max-width: $CONTAINER;

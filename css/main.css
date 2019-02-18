@@ -118,6 +118,36 @@ html, body {
   padding: 0px;
   overflow-x: hidden; }
 
+i {
+  font-family: 'Font Awesome\ 5 Pro', Helvetica, Arial, sans-serif;
+  font-weight: 900; }
+
+h1, h2, h3, h4, h5, h6, span,
+li, a, ul, ol, p, i, b {
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #666; }
+
+h1, h2, h3, h4, h5, h6, span,
+li, a, ul, ol, p, i, b {
+  line-height: 1.36; }
+  @media screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6, span,
+    li, a, ul, ol, p, i, b {
+      line-height: 1.5; } }
+
 .inner-container {
   max-width: 85%; }
   @media screen and (max-width: 600px) {

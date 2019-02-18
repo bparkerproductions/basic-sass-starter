@@ -7,6 +7,39 @@
 /*
  * APP general mixins
  */
+/* Section Spacers */
+/* Bottom Spacing */
+/* Section Spacers */
+.spacer-small {
+  padding: 40px 0; }
+  @media screen and (max-width: 1024px) {
+    .spacer-small {
+      padding: 25px 0; } }
+
+.spacer-medium {
+  padding: 75px 0; }
+  @media screen and (max-width: 1024px) {
+    .spacer-medium {
+      padding: 60px 0; } }
+
+.mb-small {
+  margin-bottom: 40px; }
+  @media screen and (max-width: 1024px) {
+    .mb-small {
+      margin-bottom: 25px; } }
+
+.mb-medium {
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1024px) {
+    .mb-medium {
+      margin-bottom: 60px; } }
+
+.mb-large {
+  margin-bottom: 100px; }
+  @media screen and (max-width: 800px) {
+    .mb-large {
+      margin-bottom: 60px; } }
+
 body {
   font-size: 18px; }
 

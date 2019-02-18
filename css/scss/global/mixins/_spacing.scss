@@ -1,0 +1,41 @@
+/* Section Spacers */
+@mixin spacer-medium() {
+  padding: $SPC-MED-PLUS 0;
+
+  @include atMedium {
+    padding: $SPC-MED 0;
+  }
+}
+
+@mixin spacer-small() {
+  padding: $SPC-SMALL-PLUS 0;
+
+  @include atMedium {
+    padding: $SPC-SMALL 0;
+  }
+}
+
+/* Bottom Spacing */
+@mixin mb-small() {
+  margin-bottom: $SPC-SMALL-PLUS;
+
+  @include atMedium {
+    margin-bottom: $SPC-SMALL;
+  }
+}
+
+@mixin mb-medium() {
+  margin-bottom: $SPC-MED-PLUS;
+
+  @include atMedium {
+    margin-bottom: $SPC-MED;
+  }
+}
+
+@mixin mb-large() {
+  margin-bottom: $SPC-LARGE;
+
+  @include atTablet {
+    margin-bottom: $SPC-MED;
+  }
+}

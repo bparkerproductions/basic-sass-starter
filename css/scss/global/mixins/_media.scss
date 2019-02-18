@@ -50,6 +50,18 @@
 	}
 }
 
+@mixin atLargeAndUp() {
+	@media screen and (min-width: $LARGE) {
+		@content;
+	}
+}
+
+@mixin atLarge() {
+	@media screen and (max-width: $LARGE) {
+		@content;
+	}
+}
+
 @mixin atCustomAndUp($bp) {
 	@media screen and (min-width: $bp) {
 		@content;
@@ -67,4 +79,4 @@
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	  @content;
 	}
-  }
+}

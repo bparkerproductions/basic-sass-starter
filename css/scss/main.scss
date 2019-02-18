@@ -2,15 +2,17 @@
  * Import global styles and mixins
  */
 
+//mixins
+@import 'global/mixins/media';
+@import 'global/mixins/general';
+
 //framework and helpers
 @import 'global/framework/variables';
 @import 'global/framework/helper-classes';
 @import 'global/framework/typography';
-@import 'global/framework/position';
 
-//mixins
-@import 'global/mixins/media';
-@import 'global/mixins/general';
+//extends
+@import 'global/extends/general';
 
 //global
 @import 'global/main';

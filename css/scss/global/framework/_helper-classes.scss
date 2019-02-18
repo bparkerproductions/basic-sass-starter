@@ -1,33 +1,12 @@
-//helper classes
-.horizontal-list {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-
-	li {
-		margin: 0px 12px;
-	}
-}
-
 //positioning classes
 .column-center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@extend %column-center;
 }
 
 .hard-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %hard-center;
 }
 
-//container
-.inner-container {
-	max-width: $CONTAINER;
-
-	@include atSmall {
-		max-width: $CONTAINER-SMALL;
-		padding: 0px 15px;
-	}
+.column-hard-center {
+  @extend %column-hard-center;
 }

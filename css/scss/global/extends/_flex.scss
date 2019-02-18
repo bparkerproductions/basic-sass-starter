@@ -14,3 +14,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+%column-hard-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

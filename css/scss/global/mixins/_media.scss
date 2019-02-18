@@ -61,3 +61,10 @@
 		@content;
 	}
 }
+
+//Browser specific queries
+@mixin ifIE() {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	  @content;
+	}
+  }

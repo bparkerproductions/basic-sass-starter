@@ -9,7 +9,27 @@
  */
 /* Section Spacers */
 /* Bottom Spacing */
+/*
+ * Common position classes that can be used in CSS
+ * instead of by classes
+ */
 /* Section Spacers */
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hard-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.column-hard-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .spacer-small {
   padding: 40px 0; }
   @media screen and (max-width: 1024px) {
@@ -87,27 +107,6 @@ p {
   @media screen and (max-width: 600px) {
     p {
       font-size: 1em; } }
-
-/* Main extends loader */
-/*
- * Common position classes that can be used in CSS
- * instead of by classes
- */
-.hard-center {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.column-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.column-hard-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
 
 /*
  * Global APP styles

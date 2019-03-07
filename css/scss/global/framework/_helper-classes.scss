@@ -1,14 +1,14 @@
 //positioning classes
 .column-center {
-	@extend %column-center;
+	@include column-center;
 }
 
 .hard-center {
-	@extend %hard-center;
+	@include hard-center;
 }
 
 .column-hard-center {
-  @extend %column-hard-center;
+  @include column-hard-center;
 }
 
 //spacing

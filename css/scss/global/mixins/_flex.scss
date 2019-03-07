@@ -3,19 +3,19 @@
  * instead of by classes
  */
 
- %hard-center {
+ @mixin hard-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-%column-center {
+@mixin column-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-%column-hard-center {
+@mixin column-hard-center {
   display: flex;
   flex-direction: column;
   justify-content: center;

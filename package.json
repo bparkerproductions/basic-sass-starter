@@ -16,5 +16,8 @@
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0"
+  },
+  "scripts": {
+    "start": "gulp watch"
   }
 }

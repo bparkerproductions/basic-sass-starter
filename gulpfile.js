@@ -106,4 +106,3 @@ gulp.task('watch',function(){
 	gulp.watch('app/**', ['app-load']);
   gulp.watch('js/**', ['js-bundle']);
 });
-

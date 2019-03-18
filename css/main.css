@@ -8,28 +8,12 @@
  * APP general mixins
  */
 /* Section Spacers */
-/* Bottom Spacing */
+/* Top and Bottom Spacers */
 /*
  * Common position classes that can be used in CSS
  * instead of by classes
  */
 /* Section Spacers */
-.column-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.hard-center {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.column-hard-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .spacer-small {
   padding: 40px 0; }
   @media screen and (max-width: 1024px) {
@@ -48,17 +32,63 @@
     .mb-small {
       margin-bottom: 25px; } }
 
+.mt-small {
+  margin-top: 40px; }
+  @media screen and (max-width: 1024px) {
+    .mt-small {
+      margin-top: 25px; } }
+
 .mb-medium {
-  margin-bottom: 75px; }
+  margin-bottom: 60px; }
   @media screen and (max-width: 1024px) {
     .mb-medium {
+      margin-bottom: 40px; } }
+
+.mt-medium {
+  margin-top: 60px; }
+  @media screen and (max-width: 1024px) {
+    .mt-medium {
+      margin-top: 40px; } }
+
+.mb-medium-plus {
+  margin-bottom: 75px; }
+  @media screen and (max-width: 1024px) {
+    .mb-medium-plus {
       margin-bottom: 60px; } }
+
+.mt-medium-plus {
+  margin-top: 75px; }
+  @media screen and (max-width: 1024px) {
+    .mt-medium-plus {
+      margin-top: 60px; } }
 
 .mb-large {
   margin-bottom: 100px; }
   @media screen and (max-width: 800px) {
     .mb-large {
       margin-bottom: 60px; } }
+
+.mt-large {
+  margin-top: 100px; }
+  @media screen and (max-width: 800px) {
+    .mt-large {
+      margin-top: 60px; } }
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.hard-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.column-hard-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 body {
   font-size: 18px; }

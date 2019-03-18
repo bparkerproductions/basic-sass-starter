@@ -1,16 +1,3 @@
-//positioning classes
-.column-center {
-	@include column-center;
-}
-
-.hard-center {
-	@include hard-center;
-}
-
-.column-hard-center {
-  @include column-hard-center;
-}
-
 //spacing
 .spacer-small {
   @include spacer-small;
@@ -24,10 +11,30 @@
   @include mb-small;
 }
 
+.mt-small {
+  @include mt-small;
+}
+
 .mb-medium {
   @include mb-medium;
 }
 
+.mt-medium {
+  @include mt-medium;
+}
+
+.mb-medium-plus {
+  @include mb-medium-plus;
+}
+
+.mt-medium-plus {
+  @include mt-medium-plus;
+}
+
 .mb-large {
   @include mb-large;
+}
+
+.mt-large {
+  @include mt-large;
 }

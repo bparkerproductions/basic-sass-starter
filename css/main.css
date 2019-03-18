@@ -148,13 +148,14 @@ html, body {
   overflow-x: hidden; }
 
 i {
-  font-family: 'Font Awesome\ 5 Pro', Helvetica, Arial, sans-serif;
+  font-family: "Font Awesome 5 Pro", Helvetica, Arial, sans-serif;
   font-weight: 900; }
 
 h1, h2, h3, h4, h5, h6, span,
 li, a, ul, ol, p, i, b {
   color: #333;
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 input[type="text"],
@@ -164,6 +165,7 @@ input[type="tel"],
 select,
 textarea {
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {

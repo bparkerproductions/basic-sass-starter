@@ -2,27 +2,26 @@
  * Global APP styles
  */
 
-html,body {
+html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 i {
-  font-family: 'Font Awesome\ 5 Pro', Helvetica, Arial, sans-serif;
+  @include font('Font Awesome\ 5 Pro');
   font-weight: 900;
 }
 
 @include allText {
   color: $text-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @include font-smoothing;
 }
 
 @include allInputs {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @include font-smoothing;
 }
 
 @include allHeaders {

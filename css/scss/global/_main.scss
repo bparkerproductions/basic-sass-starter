@@ -14,12 +14,6 @@ i {
   font-weight: 900;
 }
 
-@include allText {
-  color: $text-color;
-
-  @include font-smoothing;
-}
-
 @include allInputs {
   @include font-smoothing;
 }
@@ -32,12 +26,14 @@ i {
 @include allText {
   line-height: $LINE-HEIGHT;
 
+  @include font-smoothing;
+
   @include atSmall {
     line-height: $MOBILE-LINE-HEIGHT;
   }
 }
 
-//container
+//set sizes
 .inner-container {
 	max-width: $CONTAINER;
 
@@ -45,4 +41,12 @@ i {
 		max-width: $CONTAINER-SMALL;
 		padding: 0px 15px;
 	}
+}
+
+p {
+  font-size: $PARA_FONT_SIZE;
+
+  @include atSmall {
+    font-size: $SMALL_PARA_FONT_SIZE;
+  }
 }

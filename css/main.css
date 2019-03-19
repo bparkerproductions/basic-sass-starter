@@ -90,6 +90,14 @@
   justify-content: center;
   align-items: center; }
 
+.button {
+  padding: 15px;
+  width: 200px; }
+
+.button.large {
+  padding: 22.5px;
+  width: 250px; }
+
 body {
   font-size: 18px; }
 
@@ -130,14 +138,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   margin: 0 0 10px 0; }
 
-p {
-  color: #333;
-  line-height: 1.3;
-  font-size: 1em; }
-  @media screen and (max-width: 600px) {
-    p {
-      font-size: 1em; } }
-
 /*
  * Global APP styles
  */
@@ -150,13 +150,6 @@ html, body {
 i {
   font-family: "Font Awesome 5 Pro", Helvetica, Arial, sans-serif;
   font-weight: 900; }
-
-h1, h2, h3, h4, h5, h6, span,
-li, a, ul, ol, p, i, b {
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
 
 input[type="text"],
 input[type="password"],
@@ -173,7 +166,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, span,
 li, a, ul, ol, p, i, b {
-  line-height: 1.36; }
+  line-height: 1.36;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   @media screen and (max-width: 600px) {
     h1, h2, h3, h4, h5, h6, span,
     li, a, ul, ol, p, i, b {
@@ -185,3 +181,9 @@ li, a, ul, ol, p, i, b {
     .inner-container {
       max-width: 100%;
       padding: 0px 15px; } }
+
+p {
+  font-size: 1em; }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 1em; } }

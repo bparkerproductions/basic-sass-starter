@@ -3,21 +3,21 @@
  */
 
 //mixins
-@import 'global/mixins/media';
-@import 'global/mixins/general';
-@import 'global/mixins/spacing';
-@import 'global/mixins/elements';
-@import 'global/mixins/flex';
-@import 'global/mixins/buttons';
+@import "global/mixins/media";
+@import "global/mixins/general";
+@import "global/mixins/spacing";
+@import "global/mixins/elements";
+@import "global/mixins/flex";
+@import "global/mixins/buttons";
 
 //framework and helpers
-@import 'global/variables/main';
-@import 'global/framework/helpers/helper-classes';
-@import 'global/framework/typography';
+@import "global/variables/main";
+@import "global/framework/helpers/helper-classes";
+@import "global/framework/typography";
 
 //extends
-@import 'global/extends/general';
+@import "global/extends/general";
 
 //global
-@import 'global/main';
+@import "global/main";
 

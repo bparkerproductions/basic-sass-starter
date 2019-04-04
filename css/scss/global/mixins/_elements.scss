@@ -2,7 +2,7 @@
   padding-left: 1em;
   position: relative;
 
-  &:before {
+  &::before {
     content: "• ";
     color: $color;
     font-size: 20px;
@@ -13,9 +13,6 @@
 }
 
 @mixin scrollbar($color, $size) {
-  scrollbar-width: $size;
-  scrollbar-color: $color;
-
   &::-webkit-scrollbar {
     width: $size;
     height: $size;
@@ -25,3 +22,4 @@
     background: $color;
   }
 }
+

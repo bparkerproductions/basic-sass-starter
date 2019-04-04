@@ -1,3 +1,4 @@
+/* stylelint-disable */
 /*
  * APP general mixins
  */
@@ -35,3 +36,4 @@
 @mixin font($family) {
   font-family: $family, Helvetica, Arial, sans-serif;
 }
+

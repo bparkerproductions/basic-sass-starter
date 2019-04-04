@@ -3,7 +3,7 @@
  * instead of by classes
  */
 
- @mixin hard-center {
+@mixin hard-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,3 +21,4 @@
   justify-content: center;
   align-items: center;
 }
+

@@ -4,8 +4,6 @@
 @import "left";
 
 /* Top and Bottom Spacers */
-
-
 @mixin mt-small() {
   margin-top: $SPC-SMALL-PLUS;
 
@@ -21,7 +19,6 @@
     margin-top: $SPC-MED;
   }
 }
-
 
 @mixin mt-medium() {
   margin-top: $SPC-MED;

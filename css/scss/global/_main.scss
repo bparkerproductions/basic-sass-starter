@@ -1,16 +1,17 @@
 /*
  * Global APP styles
  */
-
-html, body {
+html,
+body {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 i {
   @include font("Font Awesome\ 5 Pro");
+
   font-weight: 900;
 }
 
@@ -35,12 +36,12 @@ i {
 
 //set sizes
 .inner-container {
-	max-width: $CONTAINER;
+  max-width: $CONTAINER;
 
-	@include atSmall {
-		max-width: $CONTAINER-SMALL;
-		padding: 0px 15px;
-	}
+  @include atSmall {
+    max-width: $CONTAINER-SMALL;
+    padding: 0 15px;
+  }
 }
 
 p {
@@ -50,3 +51,4 @@ p {
     font-size: $SMALL_PARA_FONT_SIZE;
   }
 }
+

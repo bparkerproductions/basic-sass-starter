@@ -3,12 +3,7 @@
  */
 
 //mixins
-@import "global/mixins/media";
-@import "global/mixins/general";
-@import "global/mixins/spacer/spacing";
-@import "global/mixins/elements";
-@import "global/mixins/flex";
-@import "global/mixins/buttons";
+@import "global/mixins/main";
 
 //framework and helpers
 @import "global/variables/main";

@@ -3,25 +3,8 @@ body {
 	font-size: $BASE-FONT_SIZE;
 }
 
-h1 { font-size: $FONT_SCALE*3.47em; }
-h2 { font-size: $FONT_SCALE*2.6em; }
-h3 { font-size: $FONT_SCALE*1.95em; }
-h4 { font-size: $FONT_SCALE*1.466em; }
-h5 { font-size: $FONT_SCALE*1.1em; }
-h6 { font-size: $FONT_SCALE*0.825em; }
+@include font-scale($FONT_SCALE);
 
 @include atSmall {
-	h1 { font-size: $SMALL_FONT_SCALE*1.982em; }
-	h2 { font-size: $SMALL_FONT_SCALE*1.762em; }
-	h3 { font-size: $SMALL_FONT_SCALE*1.566em; }
-	h4 { font-size: $SMALL_FONT_SCALE*1.392em; }
-	h5 { font-size: $SMALL_FONT_SCALE*1.238em; }
-	h6 { font-size: $SMALL_FONT_SCALE*1.1em; }
+	@include font-scale($SMALL_FONT_SCALE);
 }
-
-@include allHeaders {
-	font-weight: bold;
-	color: $text-color;
-	margin: 0 0 10px 0;
-}
-

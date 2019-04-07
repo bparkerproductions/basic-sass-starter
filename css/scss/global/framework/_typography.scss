@@ -8,3 +8,7 @@ body {
 @include atSmall {
 	@include font-scale($SMALL_FONT_SCALE);
 }
+
+@include atLaptopUp {
+	@include font-scale($LARGE_FONT_SCALE);
+}

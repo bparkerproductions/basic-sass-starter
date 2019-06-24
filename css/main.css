@@ -104,50 +104,63 @@ body {
   font-size: 18px; }
 
 h1 {
-  font-size: 1.982em; }
+  font-size: 3.47em; }
 
 h2 {
-  font-size: 1.762em; }
+  font-size: 2.6em; }
 
 h3 {
-  font-size: 1.566em; }
+  font-size: 1.95em; }
 
 h4 {
-  font-size: 1.392em; }
+  font-size: 1.466em; }
 
 h5 {
-  font-size: 1.238em; }
+  font-size: 1.1em; }
 
 h6 {
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 1.982em; }
+    font-size: 3.47em; }
   h2 {
-    font-size: 1.762em; }
+    font-size: 2.6em; }
   h3 {
-    font-size: 1.566em; }
+    font-size: 1.95em; }
   h4 {
-    font-size: 1.392em; }
+    font-size: 1.466em; }
   h5 {
-    font-size: 1.238em; }
+    font-size: 1.1em; }
   h6 {
-    font-size: 1.1em; } }
+    font-size: 1em; } }
 
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 2.3784em; }
+    font-size: 4.164em; }
   h2 {
-    font-size: 2.1144em; }
+    font-size: 3.12em; }
   h3 {
-    font-size: 1.8792em; }
+    font-size: 2.34em; }
   h4 {
-    font-size: 1.6704em; }
+    font-size: 1.7592em; }
   h5 {
-    font-size: 1.4856em; }
+    font-size: 1.32em; }
   h6 {
-    font-size: 1.32em; } }
+    font-size: 1.2em; } }
+
+.layout-two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .layout-two-columns .layout-col {
+    flex-basis: 48%;
+    max-width: 48%;
+    margin: 25px 0; }
+    @media screen and (max-width: 600px) {
+      .layout-two-columns .layout-col {
+        flex-basis: 100%;
+        max-width: 100%; } }
 
 /*
  * Global APP styles

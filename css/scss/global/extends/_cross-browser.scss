@@ -1,0 +1,17 @@
+%ie-width {
+  @include ifIE {
+    width: 100%;
+  }
+}
+
+%ie-height {
+  @include ifIE {
+    height: 100% !important;
+  }
+}
+
+%ie-max-width {
+  @include ifIE {
+    max-width: 100%;
+  }
+}

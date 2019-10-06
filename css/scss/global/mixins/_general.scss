@@ -37,3 +37,17 @@
   font-family: $family, Helvetica, Arial, sans-serif;
 }
 
+@mixin form-placeholder() {
+  &::placeholder {
+    @content;
+  }
+
+  &::-ms-input-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+

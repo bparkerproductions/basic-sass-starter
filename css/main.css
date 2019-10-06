@@ -91,14 +91,6 @@
   justify-content: center;
   align-items: center; }
 
-.button {
-  padding: 15px;
-  width: 200px; }
-
-.button.large {
-  padding: 22.5px;
-  width: 250px; }
-
 /* stylelint-disable */
 body {
   font-size: 18px; }
@@ -159,6 +151,23 @@ h6 {
     margin: 25px 0; }
     @media screen and (max-width: 600px) {
       .layout-two-columns .layout-col {
+        flex-basis: 100%;
+        max-width: 100%; } }
+
+.layout-three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .layout-three-columns .layout-col {
+    flex-basis: 32%;
+    max-width: 32%;
+    margin: 25px 0; }
+    @media screen and (max-width: 1024px) {
+      .layout-three-columns .layout-col {
+        flex-basis: 48%;
+        max-width: 48%; } }
+    @media screen and (max-width: 600px) {
+      .layout-three-columns .layout-col {
         flex-basis: 100%;
         max-width: 100%; } }
 

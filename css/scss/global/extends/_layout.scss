@@ -14,3 +14,25 @@
     }
   }
 }
+
+%layout-three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .layout-col {
+    flex-basis: 32%;
+    max-width: 32%;
+    margin: 25px 0;
+
+    @include atMedium {
+      flex-basis: 48%;
+      max-width: 48%;
+    }
+
+    @include atSmall {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}

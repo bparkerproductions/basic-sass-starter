@@ -15,7 +15,7 @@
   }
 }
 
-@mixin spacer-custom($small, $large) {
+@mixin spacer-custom($large, $small) {
   padding: $large 0;
 
   @include atMedium {
@@ -23,7 +23,7 @@
   }
 }
 
-@mixin spacer-custom-full($small, $medium, $large) {
+@mixin spacer-custom-full($large, $medium, $small) {
   padding: $large 0;
 
   @include atMedium {
@@ -35,7 +35,7 @@
   }
 }
 
-@mixin spacer-side-custom($small, $large) {
+@mixin spacer-side-custom($large, $small) {
   padding: 0 $large;
 
   @include atMedium {
@@ -43,7 +43,7 @@
   }
 }
 
-@mixin spacer-side-custom-full($small, $medium, $large) {
+@mixin spacer-side-custom-full($large, $medium, $small) {
   padding: 0 $large;
 
   @include atMedium {

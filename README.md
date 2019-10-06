@@ -5,7 +5,7 @@ A basic starter file structure I use for personal and freelance projects. Includ
 </p>
 
 <p>
-This is just a starting point, and there's no kind of JS setup, but it does include Vue
+This is just a starting point, and there's no kind of JS setup.
 </p>
 
 <h1> To Use: </h1>
@@ -17,5 +17,3 @@ This is just a starting point, and there's no kind of JS setup, but it does incl
 <li>gulp watch</li>
 <li> Enjoy a hassle-free setup! </li>
 </ol>
-
-<h1> Enjoy! </h1>

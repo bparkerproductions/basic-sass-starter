@@ -18,3 +18,21 @@
   height: 100%;
   z-index: 2;
 }
+
+%hide-elem {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+%hide-on-mobile {
+  @include atMobile {
+    display: none;
+  }
+}
+
+%show-on-mobile {
+  @include atMobileAndUp {
+    display: none;
+  }
+}

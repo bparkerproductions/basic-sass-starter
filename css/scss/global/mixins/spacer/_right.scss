@@ -1,19 +1,3 @@
-@mixin mr-small() {
-  margin-right: $SPC-SMALL-PLUS;
-
-  @include atMedium {
-    margin-right: $SPC-SMALL;
-  }
-}
-
-@mixin mr-medium() {
-  margin-right: $SPC-MED;
-
-  @include atMedium {
-    margin-right: $SPC-SMALL-PLUS;
-  }
-}
-
 @mixin mr-custom($large, $small) {
   margin-right: $large;
 
@@ -31,5 +15,25 @@
 
   @include atSmall {
     margin-right: $small;
+  }
+}
+
+@mixin pr-custom($large, $small) {
+  padding-right: $large;
+
+  @include atMedium {
+    padding-right: $small;
+  }
+}
+
+@mixin pr-custom-full($large, $medium, $small) {
+  padding-right: $large;
+
+  @include atMedium {
+    padding-right: $medium;
+  }
+
+  @include atSmall {
+    padding-right: $small;
   }
 }

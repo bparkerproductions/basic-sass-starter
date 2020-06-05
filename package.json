@@ -3,7 +3,7 @@
   "version": "",
   "dependencies": {
     "gulp-autoprefixer": "^7.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "run-sequence": "^2.2.1"
   },
   "devDependencies": {

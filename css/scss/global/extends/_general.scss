@@ -26,13 +26,13 @@
 }
 
 %hide-on-mobile {
-  @include atMobile {
+  @include atSmall {
     display: none;
   }
 }
 
 %show-on-mobile {
-  @include atMobileAndUp {
+  @include atSmallUp {
     display: none;
   }
 }

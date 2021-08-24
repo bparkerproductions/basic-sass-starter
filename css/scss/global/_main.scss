@@ -23,7 +23,7 @@ i {
   color: $header-color;
 }
 
-//default line-height
+// default line-height
 @include allText {
   line-height: $LINE-HEIGHT;
 
@@ -34,7 +34,7 @@ i {
   }
 }
 
-//set sizes
+// set sizes
 .inner-container {
   max-width: $CONTAINER;
 
@@ -51,4 +51,3 @@ p {
     font-size: $SMALL_PARA_FONT_SIZE;
   }
 }
-
